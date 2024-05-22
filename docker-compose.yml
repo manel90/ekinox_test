@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3003:3003"
+    networks:
+      - bttf-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "4200:4200"
+    networks:
+      - bttf-network
+    environment:
+      - API_URL=http://backend:3003
+
+networks:
+  bttf-network:
+    driver: bridge

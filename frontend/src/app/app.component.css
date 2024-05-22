@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div > label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  background-color: #f9f9f9;
+}
+
+.btnCal {
+  width: 150px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin: 0 auto;
+
+}
+.addbtn{
+  width: 180px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #5fb904;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Rouge */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f; /* Rouge plus foncé au survol */
+}
+
+.dvd-container {
+  display: flex;
+  align-items: center; /* Aligner les éléments verticalement au centre */
+}
+
+hr {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+}
+
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.resetbtn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  width: 150px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resetbtn:hover {
+  background-color: #e0e0e0;
+}

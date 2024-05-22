@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Back to the Future DVD </h1>
+  <form (ngSubmit)="calculateTotal()">
+    <div *ngFor="let dvd of dvds; let i = index" class="dvd-container">
+      <label for="dvd{{i}}">DVD {{i + 1}}</label>
+      <select id="dvd{{i}}" [(ngModel)]="dvds[i]" name="dvd{{i}}">
+        <option value="{{dvd_txt1}}">{{dvd_txt1}}</option>
+        <option value="{{dvd_txt2}}">{{dvd_txt2}}</option>
+        <option value="{{dvd_txt3}}">{{dvd_txt3}}</option>
+        <option value="{{other_dvd_txt}}">{{other_dvd_txt}}</option>
+      </select>
+      <button type="button" (click)="removeDvd(i)" class="delete-btn" *ngIf="i>0">Delete</button>
+
+    </div>
+    <button type="button" (click)="addDvd()" class="addbtn">Add another DVD</button>
+    <hr>
+    <div class="form-buttons ">
+      <button type="button" (click)="resetDvds()" class="resetbtn">Reset</button>
+      <button type="submit" class="btnCal">Calculate Price</button>
+    </div>
+
+  </form>
+  <div *ngIf="total !== null">
+    <h2>Total: {{ total }} €</h2>
+  </div>
+</div>
